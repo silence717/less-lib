@@ -1,0 +1,20 @@
+// 宽高设置
+.size(@width; @height) {
+	width: @width;
+	height: @height;
+}
+// 正方形
+.square(@size) {
+	.size(@size; @size);
+}
+
+// 圆形
+.circular(@size) {
+	.size(@width, @height);
+	border-radius: 50%;
+}
+
+// 三角形
+.triangle(@size, @color) {
+
+}

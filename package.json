@@ -1,0 +1,10 @@
+{
+  "name": "less-lib",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/silence717/less-lib.git",
+  "author": "fang.yang <yangfang2028@126.com>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
