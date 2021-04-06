@@ -1,0 +1,42 @@
+// 正方形
+.square(@size) {
+	.size(@size; @size);
+}
+// 矩形
+.size(@width; @height) {
+	width: @width;
+	height: @height;
+}
+
+// 圆形
+.circular(@size) {
+	.square(@size);
+	border-radius: 50%;
+}
+
+// 三角形
+.triangle(@size) {
+	width: 0;
+    height: 0;
+    border: @size solid transparent;
+}
+
+.triangle-top(@size, @color) {
+	.triangle(@size);
+	border-bottom: @size solid @color;
+}
+
+.triangle-bottom(@size, @color) {
+	.triangle(@size);
+	border-top: @size solid @color;
+}
+
+.triangle-left(@size, @color) {
+	.triangle(@size);
+	border-right: @size solid @color;
+}
+
+.triangle-right(@size, @color) {
+	.triangle(@size);
+	border-left: @size solid @color;
+}

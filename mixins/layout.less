@@ -1,6 +1,14 @@
-// flex 垂直和水平都居中
+// flex 水平布局，垂直和水平都居中
 .flex-center {
 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// flex 垂直布局，垂直和水平都居中
+.flex-column-center {
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -22,6 +30,13 @@
 .flex-column {
 	display: flex;
 	flex-direction: column;
+}
+
+// flex 布局主轴为垂直方向, 在垂直方向居中
+.flex-colum-vertical-middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 // 绝对定位水平和垂直方向都居中
