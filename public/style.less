@@ -22,8 +22,13 @@ section {
     display: flex;
     gap: 10px;
 
+    .list {
+        .flex-column-center;
+        gap: 10px;
+    }
+
     .color-item {
-        .flex-colum-vertical-middle;
+        .flex-column-vertical-middle;
         color: #fff;
         width: 100px;
         height: 100px;
@@ -32,12 +37,13 @@ section {
     }
 }
 
-.size-area {
+.shape-area {
     display: flex;
+    align-items: flex-end;
     gap: 20px;
     color: @color-gray1;
 
-    .size-item {
+    .shape-item {
         .flex-column-center;
         gap: 10px;
     }
@@ -85,6 +91,11 @@ section {
     display: flex;
     gap: 20px;
 
+    .list {
+        .flex-column;
+        gap: 10px;
+    }
+
     .layout-item {
         .size (200px, 100px);
         color: @color-gray2;
@@ -118,6 +129,11 @@ section {
     gap: 20px;
     color: @color-white;
 
+    .item {
+        .flex-column;
+        gap: 10px;
+    }
+
     .single {
         width: 100px;
         background: brown;
@@ -125,9 +141,19 @@ section {
     }
 
     .multi {
-        box-sizing: border-box;
         width: 100px;
         background: burlywood;
         .multi-text-overflow-ellipsis(2);
     }
+}
+
+code {
+    font-family: monospace;
+    font-size: inherit;
+    background: @color-white;
+    color: @color-gray1;
+    letter-spacing: -0.05em;
+    word-break: normal;
+    padding: 10px;
+    border-radius: 5px;
 }
