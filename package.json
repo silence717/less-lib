@@ -1,5 +1,5 @@
 {
-  "name": "less-lib",
+  "name": "@silence717/less-lib",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/silence717/less-lib.git",
@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html --no-source-maps --out-dir ./docs/ --public-url ./"
+    "build": "parcel build ./public/index.html --no-source-maps --out-dir ./docs/ --public-url ./",
+    "test": "exit 0"
   },
   "dependencies": {
     "react": "^17.0.2",
