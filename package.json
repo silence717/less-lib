@@ -17,5 +17,8 @@
   "devDependencies": {
     "less": "^4.1.1",
     "parcel-bundler": "^1.12.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/silence717"
   }
 }
